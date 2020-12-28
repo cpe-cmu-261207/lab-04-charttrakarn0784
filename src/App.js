@@ -1,4 +1,5 @@
 import { useState } from "react";
+import  { CourseCard } from "./components/CourseCard";
 
 function App() {
   const grade = ["A", "B+", "B", "C+", "C", "D+", "D", "F", "W"];
@@ -47,6 +48,10 @@ function App() {
         <h1 className="text-2xl my-3">My courses</h1>
         {/* TODO display courses */}
       </div>
+      {grade.map((item) => {
+        return <p>{item}</p>
+      })}
+
       {/* TODO add course input form */}
       {/* TODO display calculated GPA */}
     </div>
